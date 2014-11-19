@@ -2,8 +2,8 @@ function Plot_task(Task,show_best)
     
      set(0,'defaultlinelinewidth',2)
 
-    window_avg=10;
-    window_best=10;
+    window_avg=1;
+    window_best=1;
     T=Task.sim_params.T;
     A=length(Task.algorithms.main); %number of main algorithms;
     

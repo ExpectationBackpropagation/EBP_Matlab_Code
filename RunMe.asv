@@ -10,7 +10,7 @@ addpath('util\');
 addpath('Results\');
 
 block_num=0; %initial block to start from - 0 generate new data set
-Runs=3; %number of blocks to generate
+Runs=1; %number of blocks to generate
 
 % Learning algorithms
 prompt = 'Please Choose an algorithem:\n1. Binary-EBP \n2. Real-EBP\nChoosen algorithem: ';
@@ -60,7 +60,7 @@ Test_ratio=1/8; %for eight-fold cross validation
 T_train=floor(size_data*(1-Test_ratio)); %total number of samples in training data
 T_test=floor(size_data*Test_ratio); %total number of samples in test data
 
-epochs=1; %number of presentations of the training set in each run
+epochs=3; %number of presentations of the training set in each run
 T=epochs*T_train; %total number of patterns
 Rep_num=1/Test_ratio;% for K-fold cross valdiation, choose  Rep_num=1/Test_ratio, and Test_ratio=1/K;
 downsample_ratio=T_train;
@@ -302,8 +302,8 @@ end
 
 %% close all
 
-% hold all
-% Plot_task(Task,0);
+hold all
+Plot_task(Task,1);
 
 
 
