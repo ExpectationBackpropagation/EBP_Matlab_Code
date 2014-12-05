@@ -174,7 +174,7 @@ for rr=1:Runs %change file name in 2 places, block_num, and net+sim paramters
                     h_cell=[];
                 end
                 
-                if exist('b_cell_initial','var') %initialize hidden bias
+                if exist('bias_cell_initial','var') %initialize hidden bias
                     bias_cell=bias_cell_initial{ii,jj,rep};
                 else
                     bias_cell=[];
@@ -288,7 +288,7 @@ for rr=1:Runs %change file name in 2 places, block_num, and net+sim paramters
 
              Task.algorithms.h_cell=h_cell_array;
              Task.algorithms.bias_cell=bias_cell_array;
-            if ~exist(ResultsFolder)
+            if ~exist(ResultsFolder,'dir')
                 mkdir(ResultsFolder)
             end
             save([ name '.mat'],'Task');

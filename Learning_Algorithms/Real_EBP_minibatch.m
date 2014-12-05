@@ -59,8 +59,8 @@ batch_size_fixed=batch_size;
 time=0;
 
 for tt=1:batch_size_fixed:T
-    batch_size=min(batch_size,T-tt); %reduce batch size if not enough example remain
-    batch_ind=tt:(tt+batch_size); %batch indices
+    batch_size=min(batch_size,T-tt+1); %reduce batch size if not enough example remain
+    batch_ind=tt:(tt+batch_size-1); %batch indices
     %% Forward pass
     %first layer    
     mean_v=x(:,batch_ind);
