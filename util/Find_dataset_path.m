@@ -7,7 +7,6 @@ end
 Directory='Datasets/Classification/';
 data_file_path=[ Directory dataset '/' 'processed_data.mat'];
 
-
 if length(dataset)>10
     if strcmp(dataset(1:10),'imbalanced')
        num_string= dataset(11:end);
