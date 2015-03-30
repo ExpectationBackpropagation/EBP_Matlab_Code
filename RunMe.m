@@ -13,7 +13,7 @@ block_num=0; %initial block to start from - 0 generate new data set
 Runs=3; %number of blocks to generate
 
 % Learning algorithms
-prompt = 'Please Choose an algorithem:\n1. Binary-EBP \n2. Real-EBP\nChoosen algorithem: ';
+prompt = 'Please Choose an algorithem:\n1. Binary-EBP \n2. Real-EBP\nChosen algorithem: ';
 result = input(prompt);
 if result == 1
     algorithm_array={'Binary-EBP'};  % algorithms to test
@@ -29,9 +29,9 @@ parameter_array=1;% %eta for BackProp
 w0_std=1; % standard deviation of initial conditions
 
 % sim parameters
-prompt = ['Please Choose Data Set:\n1. 20News_comp \n2. 20News_elec\n' ...
+prompt = ['Please Choose DataSet:\n1. 20News_comp \n2. 20News_elec\n' ...
           '3. apparel_books\n4. apparel_dvd\n5. domain0 \n6. domain1\n' ...
-          '7. reuters_I81_I83\n8. reuters_I654_I65\n Choosen algorithem: '];
+          '7. reuters_I81_I83\n8. reuters_I654_I65\n Chosen Dataset: '];
 result = input(prompt);
 switch result
     case 1
