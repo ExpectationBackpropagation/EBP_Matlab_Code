@@ -25,7 +25,7 @@ Interestingly, EBP-trained MNNs with binary weights usually perform better than 
 
 
 The Code contains:
-1. Real-EPB and Binary-EBP, in the folder "Learning_Algorithms". These two functions are the implementation of algorithms 2 and 1 in the paper. See documentation inside function for input-outputs.
+1. Real-EPB and Binary-EBP, in the folder "Learning_Algorithms". These two functions are the implementation of algorithms 2 and 1 in the paper's appendix. See documentation inside function for input-outputs.
 2. 8 binary text classification data sets that (as used in the paper), in the folder "Datasets/Classification"
 
 Install: 
