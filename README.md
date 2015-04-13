@@ -10,15 +10,11 @@ By D.Soudry, I.Hubara and R.Meir
 * Some prelimenary results on mnist are availble here:
 http://arxiv.org/abs/1503.03562v3
 
-* The Code contains:
-1. Real-EPB and Binary-EBP, in the folder "Learning_Algorithms". These two functions are the implementation of algorithms 2 and 1 in the paper's appendix. See documentation inside function for input-outputs.
-2. 8 binary text classification data sets that (as used in the paper), in the folder "Datasets/Classification"
+* The Code contains: (1) Real-EPB and Binary-EBP, in the folder "Learning_Algorithms". These two functions are the implementation of algorithms 2 and 1 in the paper's appendix. See documentation inside function for input-outputs.
+(2) 8 binary text classification data sets that (as used in the paper), in the folder "Datasets/Classification"
 
-* Install: 
-1. Download and extract zip from github
-2. Run RunMe.m file
-3. Choose algorithm (1) Binary-EBP / (2) Real-EPB
-4. Choose data set according to the given list
+* To Install: (1) Download and extract zip from github (2) Run RunMe.m file (3) Choose algorithm Binary-EBP or Real-EPB
+(4) Choose data set according to the given list
 
 
 
