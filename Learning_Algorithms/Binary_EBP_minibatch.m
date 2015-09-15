@@ -152,8 +152,9 @@ for tt=1:batch_size_fixed:T
         end  
         
             delta=(tanh_h.')*(delta_next.*Gi);           
-
-            h_cell(ll)={h+0.5*eta*(delta_next.*Gi)*(mean_v_prev.')};  %break: sum(isnan(r_out(tt,:)))>0
+            h=h+0.5*eta*(delta_next.*Gi)*(mean_v_prev.');
+            
+            h_cell(ll)={h};  %break: sum(isnan(r_out(tt,:)))>0
             tanh_h_cell(ll)={tanh(h)};  %break: sum(isnan(r_out(tt,:)))>0
             bias=bias+0.5*eta*sum(delta_next.*Gi,2);
             bias_cell(ll,1)={bias};
